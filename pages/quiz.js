@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
 
 import db from '../db.json';
 import backgroundImage from '../src/assets/images/backgroundAnime.jpg';
@@ -21,7 +19,7 @@ export const QuizContainer = styled.div`
   }
 `;
 
-export default function Home() {
+export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={backgroundImage}>
       <QuizContainer>
@@ -34,17 +32,7 @@ export default function Home() {
             <p>{db.description}</p>
           </Widget.Content>
         </Widget>
-
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/ricardomalan" />
     </QuizBackground>
   );
 }
