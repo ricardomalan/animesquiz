@@ -6,7 +6,6 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 
 import db from '../db.json';
-import backgroundImage from '../src/assets/images/backgroundAnime.jpg';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -21,7 +20,7 @@ export const QuizContainer = styled.div`
 
 export default function QuizPage() {
   return (
-    <QuizBackground backgroundImage={backgroundImage}>
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
         <Widget>

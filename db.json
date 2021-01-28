@@ -1,5 +1,6 @@
 {
-    "bg": "https://wallpaperset.com/w/full/2/8/8/9136.jpg",
+    "bg": "static/backgroundAnime.jpg",
+    "preview_site": "static/previewSite.png",
     "title": "Quiz sobre Animes",
     "description": "Teste os seus conhecimentos sobre a cultura pop e veja se sabe tudo sobre Animes ;)",
     "questions": [
