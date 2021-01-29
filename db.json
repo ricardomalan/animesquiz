@@ -5,25 +5,63 @@
     "description": "Teste os seus conhecimentos sobre a cultura pop e veja se sabe tudo sobre Animes ;)",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "title": "Adivinhe o nome do anime?",
+        "description": "Anime mais antigo do mundo (1958).",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Crayon Shin-chan",
+          "Pokémon",
+          "Hakujaden",
+          "Dragon Ball"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "title": "Quem disse essa frase?",
+        "description": "O Naruto pode ser um pouco duro às vezes.",
+        "answer": 1,
+        "alternatives": [
+          "Hinata Hyuga",
+          "Kakashi Hatake",
+          "Iruka Umino",
+          "Sakura Haruno"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "title": "Quantidade de episódios?",
+        "description": "Qual anime tem menos de 300 episódios.",
+        "answer": 2,
+        "alternatives": [
+          "Naruto: Shippuden",
+          "Fairy Tail",
+          "Hamtaro",
+          "Bleach"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "title": "Quem é o personagem?",
+        "description": "Ele(a) disse a frase: 'Eles se perderam novamente, Bando de idiotas!'",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Roronoa Zoro",
+          "Shikamaru Nara",
+          "Broke",
+          "Rukia Kuchiki"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "title": "Quem é um vilão?",
+        "description": "Sua ideologia é que o mundo precisava conhecer a dor para mudar seu modo de viver.",
+        "answer": 3,
+        "alternatives": [
+          "Shinobu - Yu Yu Hakusho",
+          "Aizen - Bleach",
+          "Freeza - Dragon Ball",
+          "Pain - Naruto"
         ]
       }
     ],
@@ -36,6 +74,7 @@
         "secondary": "#123273",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
+        "input": "#000000",
         "wrong": "#FF5722",
         "success": "#4CAF50"
       },
