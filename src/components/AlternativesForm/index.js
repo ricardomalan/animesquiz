@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
 const AlternativesForm = styled.form`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+  }
+
   label {
-    &[data-selected="true"] {
+    &[data-selected=${true}] {
       background-color: ${({ theme }) => theme.colors.primary};
       
       &[data-status="SUCCESS"] {
@@ -16,8 +24,9 @@ const AlternativesForm = styled.form`
       opacity: 1;
     } 
   }
+
   button {
-    margin-top: 24px;
+    margin-top: 20px;
   }
 `;
 
