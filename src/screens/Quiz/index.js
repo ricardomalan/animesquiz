@@ -3,6 +3,8 @@ import React from 'react';
 
 import { useRouter } from 'next/router';
 
+import styled from 'styled-components';
+
 import { motion } from 'framer-motion';
 import { Lottie } from '@crello/react-lottie';
 
@@ -16,9 +18,40 @@ import Widget from '../../components/Widget';
 
 import loadingAnimation from '../../animations/loadingBuster.json';
 
+const LinkAlura = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.contrastText}30`};
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
 function ResultWidget({ results }) {
   const router = useRouter();
   const { name } = router.query;
+  const number = results.filter((x) => x).length;
+  const word = number === 1 ? 'questão' : 'questões';
+
+  function message(value) {
+    if (value === 0) {
+      return 'Mas tente novamente.';
+    }
+    if (value <= 3) {
+      return 'Mandou muito bem, quase perfeito. Se estiver interessado em aprender progromação para um dia criar um quiz como esse ou desenvolver algo mais criativo não deixa de conferir os cursos da Alura.';
+    }
+    if (value > 3) {
+      return 'Caracas perfeito, você foi incrível. E sobre programação, quer aprender ou adquirir mais conhecimento não deixa de conferir os cursos da Alura.';
+    }
+  }
 
   return (
     <Widget
@@ -32,35 +65,55 @@ function ResultWidget({ results }) {
       animate="show"
     >
       <Widget.Header>
-        Resultado:
+        Resultado
       </Widget.Header>
 
       <Widget.Content>
-        <p>
-          Parabéns
-          {' '}
-          {name}
-          , você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
-              {index + 1}
+        {number === 0
+          ? (
+            <p style={{ fontSize: '16px', marginBottom: '15px' }}>
+              Poxa,
               {' '}
-              Resultado:
-              {result === true
-                ? 'Acertou'
-                : 'Errou'}
-            </li>
-          ))}
-        </ul>
+              {name}
+              !
+              <h1 style={{ fontSize: '20px', marginBottom: '15px' }}>
+                {/* eslint-disable-next-line react/jsx-curly-brace-presence */}
+                {'Infelizmente você não acertou nenhuma questão :('}
+              </h1>
+              {' '}
+              {message(number)}
+            </p>
+          )
+          : (
+            <p style={{ fontSize: '16px' }}>
+              Show,
+              {' '}
+              {name}
+              !
+              {' '}
+              <h1 style={{ fontSize: '20px', marginBottom: '15px' }}>
+                Você acertou
+                {' '}
+                {number}
+                {' '}
+                {word}
+                ,
+                {' '}
+                parabéns!
+              </h1>
+              {' '}
+              {message(number)}
+              {' '}
+              <LinkAlura
+                href="https://www.alura.com.br/"
+              >
+                <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+              </LinkAlura>
+            </p>
+          )}
 
-        <Button onClick={() => router.push('/')}>Menu</Button>
+        <Button onClick={() => router.push('/')}>Início</Button>
+
       </Widget.Content>
     </Widget>
   );

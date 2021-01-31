@@ -1,5 +1,6 @@
 {
     "bg": "https://img.wallpapersafari.com/desktop/1920/1080/43/65/sz9Ryi.png",
+    "favicon": "static/favicon.ico",
     "preview_site": "static/previewSite.png",
     "title": "Quiz sobre Animes",
     "description": "Teste os seus conhecimentos sobre a cultura pop e veja se sabe tudo sobre Animes ;)",
@@ -54,8 +55,8 @@
       },
       {
         "image": "https://pm1.narvii.com/6208/b1994218a4a45f6aeb6a7aa09d3408d93c6471ee_00.jpg",
-        "title": "Quem é um vilão?",
-        "description": "Sua ideologia é que o mundo precisava conhecer a dor para mudar seu modo de viver.",
+        "title": "Qual o vilão?",
+        "description": "Sua ideologia é que o mundo precisa conhecer a dor para mudar seu modo de viver.",
         "answer": 3,
         "alternatives": [
           "Shinobu - Yu Yu Hakusho",
