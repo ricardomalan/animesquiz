@@ -1,11 +1,11 @@
 {
-    "bg": "static/backgroundAnime.jpg",
+    "bg": "https://img.wallpapersafari.com/desktop/1920/1080/43/65/sz9Ryi.png",
     "preview_site": "static/previewSite.png",
     "title": "Quiz sobre Animes",
     "description": "Teste os seus conhecimentos sobre a cultura pop e veja se sabe tudo sobre Animes ;)",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "image": "https://www.jbox.com.br/wp/wp-content/uploads/2019/05/hakujaden-cover.jpg",
         "title": "Adivinhe o nome do anime?",
         "description": "Anime mais antigo do mundo (1958).",
         "answer": 2,
@@ -17,9 +17,9 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "image": "https://cdn.ome.lt/vPmw0vyX7Dj4bSkLHrpuipC-R0c=/1200x630/smart/extras/conteudos/naruto1.png",
         "title": "Quem disse essa frase?",
-        "description": "O Naruto pode ser um pouco duro às vezes.",
+        "description": "O Naruto pode ser um pouco duro às vezes. ... mas o Naruto também cresceu sem pai.",
         "answer": 1,
         "alternatives": [
           "Hinata Hyuga",
@@ -29,7 +29,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISQDaHHkmegX35nd_M_gJnVH41Irw-u7jbQ&usqp=CAU",
         "title": "Quantidade de episódios?",
         "description": "Qual anime tem menos de 300 episódios.",
         "answer": 2,
@@ -41,7 +41,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "image": "https://vejasp.abril.com.br/wp-content/uploads/2020/12/VEJA-SP-CARD-HORIZONTAIS-2-1.png",
         "title": "Quem é o personagem?",
         "description": "Ele(a) disse a frase: 'Eles se perderam novamente, Bando de idiotas!'",
         "answer": 0,
@@ -53,7 +53,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif",
+        "image": "https://pm1.narvii.com/6208/b1994218a4a45f6aeb6a7aa09d3408d93c6471ee_00.jpg",
         "title": "Quem é um vilão?",
         "description": "Sua ideologia é que o mundo precisava conhecer a dor para mudar seu modo de viver.",
         "answer": 3,
@@ -66,7 +66,8 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

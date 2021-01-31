@@ -65,6 +65,13 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+
+  &[data-disabled='true'] {
+    pointer-events: none;
+  }
+  &[data-disabled='false'] {
+    background-color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export default Widget;
