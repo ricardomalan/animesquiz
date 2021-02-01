@@ -4,6 +4,8 @@ Quiz sobre animes. Teste seus conhecimentos sobre a cultura pop.
 
 ![Capa do Projeto](/public/static/previewSite.png)
 
+Veja a [demonstração](https://animesquiz.ricardomalan.vercel.app/).
+
 ## Tecnologias
 
 [React](https://reactjs.org/)
@@ -14,7 +16,7 @@ Quiz sobre animes. Teste seus conhecimentos sobre a cultura pop.
 
 [Vercel](https://vercel.com/)
 
-# Contribuidores
+# Autor
 
 <table>
   <tr>
@@ -24,5 +26,3 @@ Quiz sobre animes. Teste seus conhecimentos sobre a cultura pop.
 </table>
 
 [![license mit](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square)](https://github.com/ricardomalan/animesquiz)
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-informational?style=flat-square)](#contributors)
