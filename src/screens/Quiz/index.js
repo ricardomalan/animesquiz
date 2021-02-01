@@ -43,7 +43,7 @@ function ResultWidget({ results }) {
 
   function message(value) {
     if (value === 0) {
-      return 'Mas tente novamente.';
+      return 'Mas tente de novo.';
     }
     if (value <= 3) {
       return 'Mandou muito bem, quase perfeito. Se estiver interessado em aprender programação, para um dia criar um quiz como esse ou desenvolver algo mais criativo, não deixa de conferir os cursos da Alura.';
@@ -232,6 +232,8 @@ const screenStates = {
 };
 
 export default function QuizPage({ externalQuestions, externalBg }) {
+  const router = useRouter();
+  const { screen } = router.query;
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -265,7 +267,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <QuizLogo />
+        {screen && <QuizLogo />}
 
         {screenState === screenStates.QUIZ && (
           <QuestionWidget

@@ -40,7 +40,7 @@ export default function Home() {
             <p>{db.description}</p>
             <form onSubmit={(e) => {
               e.preventDefault();
-              router.push(`/quiz?name=${name}`);
+              router.push(`/quiz?name=${name}&screen=main`);
             }}
             >
               <Input
