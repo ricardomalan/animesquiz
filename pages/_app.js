@@ -43,14 +43,13 @@ export default function App({ Component, pageProps }) {
         <meta name="title" content="Quiz - Animes" key="title" />
         <meta name="description" content={db.description} key="desc" />
 
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Quiz - Animes" key="ogsitename" />
         <meta property="og:url" content="https://animesquiz.ricardomalan.vercel.app/" key="ogurl" />
         <meta property="og:title" content="Quiz - Animes" key="ogtitle" />
         <meta property="og:description" content={db.description} key="ogdesc" />
         <meta property="og:image" content={db.preview_site} key="ogimg" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/png" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

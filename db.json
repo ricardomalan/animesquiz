@@ -68,7 +68,9 @@
     ],
     "external": [
       "https://aluraquiz-base.alura-challenges.vercel.app/",
-      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+      "https://imersao-react-nextjs-git-main.matheusbronca.vercel.app/",
+      "https://bibliaquiz.prscreis.vercel.app/",
+      "https://quiz-next-js.rodrigoandradebcc.vercel.app/"
     ],
     "theme": {
       "colors": {

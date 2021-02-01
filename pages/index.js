@@ -69,6 +69,8 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
+            <p>Dá uma olhada nos quizes que o pessoal da Imersão React Next.js desenvolveu:</p>
+
             <ul>
               {db.external.map((linkExterno) => {
                 const [projectName, githubUser] = linkExterno

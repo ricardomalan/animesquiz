@@ -46,7 +46,7 @@ function ResultWidget({ results }) {
       return 'Mas tente novamente.';
     }
     if (value <= 3) {
-      return 'Mandou muito bem, quase perfeito. Se estiver interessado em aprender progromação para um dia criar um quiz como esse ou desenvolver algo mais criativo não deixa de conferir os cursos da Alura.';
+      return 'Mandou muito bem, quase perfeito. Se estiver interessado em aprender programação, para um dia criar um quiz como esse ou desenvolver algo mais criativo, não deixa de conferir os cursos da Alura.';
     }
     if (value > 3) {
       return 'Caracas perfeito, você foi incrível. E sobre programação, quer aprender ou adquirir mais conhecimento não deixa de conferir os cursos da Alura.';
@@ -112,7 +112,7 @@ function ResultWidget({ results }) {
             </p>
           )}
 
-        <Button onClick={() => router.push('/')}>Início</Button>
+        <Button onClick={() => router.push('/')}>Jogar Novamente</Button>
 
       </Widget.Content>
     </Widget>
